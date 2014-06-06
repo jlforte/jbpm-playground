@@ -1,0 +1,11 @@
+package org.jbpm.other.rest_task;
+
+import java.lang.Number;
+
+rule "InsertOtherFacts"
+	dialect "mvel"
+	when
+		$o : Object();
+	then
+		System.out.println($o);
+end
